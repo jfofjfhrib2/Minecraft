@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1,
+                   maximum-scale=1,
+                   user-scalable=no">
+
+    <title>BlockWorld</title>
+
+    <link rel="stylesheet"
+          href="./style.css">
+</head>
+
+<body>
+
+<div id="menu">
+    <div class="panel">
+        <h1>BLOCKWORLD</h1>
+
+        <p>
+            Eine eigene 3D-Blockwelt mit Biomen,
+            Bäumen, Wasser und vielen Blöcken.
+        </p>
+
+        <button id="newGame">
+            NEUE WELT
+        </button>
+
+        <button id="loadGame">
+            WELT LADEN
+        </button>
+
+        <p class="small">
+            Smartphone: Auf der Welt wischen,
+            um dich umzusehen.
+        </p>
+    </div>
+</div>
+
+<div id="hud">
+    <div id="crosshair"></div>
+
+    <div id="stats">
+        FPS: <span id="fps">0</span><br>
+        HP: <span id="hp">20</span><br>
+        XYZ: <span id="xyz">0 / 0 / 0</span><br>
+        BIOM: <span id="biome">WALD</span>
+    </div>
+
+    <div id="help">
+        WASD: Laufen<br>
+        Leertaste: Springen<br>
+        Linksklick: Abbauen<br>
+        Rechtsklick: Platzieren<br>
+        E: Inventar<br>
+        F: Speichern
+    </div>
+
+    <div id="selectedName"></div>
+    <div id="hotbar"></div>
+</div>
+
+<div id="pause">
+    <div class="panel">
+        <h2>PAUSE</h2>
+
+        <button id="resume">
+            WEITERSPIELEN
+        </button>
+
+        <button id="save">
+            SPEICHERN
+        </button>
+
+        <button id="mainMenu">
+            HAUPTMENÜ
+        </button>
+    </div>
+</div>
+
+<div id="inventory">
+    <div class="panel">
+        <h2>INVENTAR</h2>
+
+        <div id="inventoryGrid"></div>
+
+        <button id="closeInventory">
+            SCHLIESSEN
+        </button>
+    </div>
+</div>
+
+<div id="touchControls">
+    <button id="forward">▲</button>
+    <button id="left">◀</button>
+    <button id="back">▼</button>
+    <button id="right">▶</button>
+
+    <button id="jump">⤒</button>
+    <button id="breakButton">⛏</button>
+    <button id="placeButton">＋</button>
+    <button id="inventoryButton">▦</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="./game.js"></script>
+
+</body>
+</html>
